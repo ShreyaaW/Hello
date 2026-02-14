@@ -72,7 +72,7 @@
     (() => {
       // DOM references
       const yesButton = document.getElementById('yesButton');
-      const noButton = document.getElementById('noButton');
+      const yesbutton = document.getElementById('yesbutton');
       const imageDisplay = document.getElementById('imageDisplay');
       const valentineQuestion = document.getElementById('valentineQuestion');
       const responseButtons = document.getElementById('responseButtons');
@@ -127,7 +127,7 @@
       let buttonWidth = 80;
       let fontSize = 20;
 
-      noButton.addEventListener('click', () => {
+      yesbutton.addEventListener('click', () => {
         if (noClickCount >= MAX_NO_CLICKS) return;
 
         noClickCount++;
@@ -146,7 +146,7 @@
         yesButton.style.fontSize = `${fontSize}px`;
 
         // Update "No" button text with increasingly desperate messages
-        noButton.textContent = NO_BUTTON_MESSAGES[noClickCount];
+        yesbutton.textContent = NO_BUTTON_MESSAGES[noClickCount];
       });
 
       yesButton.addEventListener('click', () => {
@@ -200,4 +200,5 @@
   </script>
 </body>
 </html>
+
 
