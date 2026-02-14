@@ -49,7 +49,7 @@
         class="rounded-md h-[300px] object-cover"
       />
       <h1 id="valentineQuestion" class="text-4xl font-bold italic text-[#bd1e59] my-4">
-        WILL YOU BE MY FOREVER VALENTINE?
+        Will you be my Valentine?
       </h1>
       <div id="responseButtons" class="flex gap-4 pt-5 items-center">
         <button
@@ -72,7 +72,7 @@
     (() => {
       // DOM references
       const yesButton = document.getElementById('yesButton');
-      const yesbutton = document.getElementById('yesbutton');
+      const noButton = document.getElementById('noButton');
       const imageDisplay = document.getElementById('imageDisplay');
       const valentineQuestion = document.getElementById('valentineQuestion');
       const responseButtons = document.getElementById('responseButtons');
@@ -127,7 +127,7 @@
       let buttonWidth = 80;
       let fontSize = 20;
 
-      yesbutton.addEventListener('click', () => {
+      noButton.addEventListener('click', () => {
         if (noClickCount >= MAX_NO_CLICKS) return;
 
         noClickCount++;
@@ -146,7 +146,7 @@
         yesButton.style.fontSize = `${fontSize}px`;
 
         // Update "No" button text with increasingly desperate messages
-        yesbutton.textContent = NO_BUTTON_MESSAGES[noClickCount];
+        noButton.textContent = NO_BUTTON_MESSAGES[noClickCount];
       });
 
       yesButton.addEventListener('click', () => {
@@ -200,5 +200,3 @@
   </script>
 </body>
 </html>
-
-
