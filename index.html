@@ -91,7 +91,7 @@
         './images/image6.gif',
         './images/image7.gif',
       ];
-
+/*
       const NO_BUTTON_MESSAGES = [
         'Yes ofcourse',
         'Anytime?',
@@ -99,6 +99,16 @@
         "Yes my love",
         "Dont ever doubt it dear",
         "Yes with all my heart",
+      ];
+*/
+
+      const NO_BUTTON_MESSAGES = [
+        "YES",
+        "YESS",
+        "YESSS",
+        "YESSSS",
+        "YESSSSS",
+        "YESSSSSS",
       ];
 
       const ALT_TEXTS = [
@@ -142,7 +152,7 @@
       yesButton.addEventListener('click', () => {
       imageDisplay.src = IMAGE_PATHS[IMAGE_PATHS.length - 1];
       imageDisplay.alt = ALT_TEXTS[ALT_TEXTS.length - 1];
-      valentineQuestion.textContent = 'YEAHHHHHHHHHHH💖';
+      valentineQuestion.textContent = '❤️❤️ HAPPY VALENTINES DAY ❤️❤️';
       responseButtons.style.display = 'none';
 
       const heart = confetti.shapeFromPath({
